@@ -2,11 +2,15 @@
 
 ## Descrição
 
-Este projeto tem como objetivo criar uma plataforma de coleta de dados sobre as preferências de características físicas de um parceiro e, com base nesses dados, **retornar o perfil de pessoa atraída por aquele usuário**. A ideia é que, ao coletar dados sobre o que o usuário acha atraente (ex: tipo de cabelo, cor da pele, idade preferida), o sistema possa analisar as preferências e características do próprio usuário e gerar um perfil baseado nas características de pessoas que seriam atraidas por ele.
+Este projeto tem como objetivo criar uma plataforma onde os usuários podem fornecer **informações sobre suas preferências físicas** em um parceiro, e com base nas **preferências de outros usuários**, o sistema **retorna um perfil de características físicas de um possível parceiro** que seria atraído por ele.
+
+A ideia é que o sistema, ao analisar as **preferências** de várias pessoas, possa gerar um perfil de parceiro baseado nas características físicas que seriam atraentes para o usuário, conforme o que é atraente para outras pessoas com preferências similares.
 
 ### Objetivo Principal
 
-O sistema irá permitir que os usuários forneçam informações sobre suas preferências físicas em um parceiro e, em seguida, retornará um perfil de características físicas que seriam atraidas a ele, de acordo com a preferência de outros usuários.
+O sistema permitirá que os usuários forneçam informações sobre suas preferências físicas e também sobre as preferências que têm em um parceiro. Com isso, será possível gerar um perfil de um **possível parceiro atraido**, com base nas preferências de **outros usuários** que compartilham características semelhantes.
+
+> Além disso com os dados obtidos é possivel de forma mais precisa utilizar as médias estatisticas para retornar perfis mais qualificados a duas pessoas, e também, a analise de perfis mais e menos atraentes. 
 
 ### Ferramentas e Tecnologias
 
@@ -18,8 +22,9 @@ O sistema irá permitir que os usuários forneçam informações sobre suas pref
 ## Funcionalidades do Sistema
 
 - Coleta de informações pessoais e preferências do usuário (ex: idade, peso, tipo de cabelo, cor da pele, etc.)
-- Geração de um perfil com base nas preferências informadas e características do próprio usuário
-- Análise estatística para determinar quais características seriam atraentes para o usuário, considerando suas preferências
+- Análise das preferências de outros usuários e criação de um perfil de parceiro atraente para o usuário
+- Geração de perfil baseado nas preferências informadas e características do próprio usuário
+- Análise estatística para determinar quais características seriam atraentes para o usuário, considerando as preferências de outras pessoas
 - Feedback de usuários para aprimoramento do sistema
 - Funcionalidade de anonimato para garantir a privacidade das preferências
 
@@ -32,15 +37,8 @@ Este projeto será desenvolvido em várias fases, começando pela coleta de dado
 - **Fase 3**: Geração do perfil atraente e ajustes com base no feedback
 - **Fase 4**: Integração de uma API pública e funcionalidade de feedback de usuários
 
-> Para obter mais detalhes das fases do projeto entre [Aqui](.\FASES.MD).
+> Para obter mais detalhes das fases do projeto entre [Aqui](.\FASES.md).
 
 ### Observação
 
 O projeto é uma **análise estatística** das preferências dos usuários, e **não garante** que os resultados representem a realidade de todos os indivíduos. A atração é uma característica subjetiva e pode variar de acordo com muitos fatores externos.
-
----
-
-## Contribuições
-
-Para contribuir com o desenvolvimento deste projeto, basta abrir uma *pull request* ou enviar uma *issue* com sugestões ou correções.
-
