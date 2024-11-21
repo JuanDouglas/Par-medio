@@ -1,123 +1,92 @@
-# Fases do Projeto de Análise de Compatibilidade de Perfis
+# Fases do Projeto: Analisador de Atração com Base em Preferências
 
-Este documento detalha as fases do projeto **Análise de Compatibilidade de Perfis**. O sistema terá como objetivo permitir que os usuários forneçam suas características físicas e comportamentais e recebam sugestões de compatibilidade baseadas em uma análise estatística.
+Este documento descreve as **fases do desenvolvimento** do projeto de análise de atração baseado nas preferências dos usuários.
 
-## Fase 1: Obtenção das Preferências dos Usuários
+## Fase 1: Coleta de Preferências do Usuário
+
 ### Objetivo
-Coletar as informações de características físicas e comportamentais dos usuários para iniciar o processo de análise de compatibilidade.
 
-### Etapas
-- Criação dos formulários de coleta de dados.
-- Definir categorias de características.
-- Garantir o armazenamento seguro dos dados.
+Coletar dados sobre as **preferências de características físicas** que o usuário acha atraente em um parceiro (por exemplo: idade, peso, cor da pele, cabelo, etc.).
 
-### Entregáveis
-- Formulários de coleta prontos.
-- Sistema de armazenamento de dados seguro.
+### Ações
 
-## Fase 2: Análise de Compatibilidade Inicial
-### Objetivo
-Realizar a comparação inicial das características para determinar a compatibilidade entre os usuários.
-
-### Etapas
-- Definir os pesos das características para a análise.
-- Desenvolver o algoritmo de compatibilidade.
-- Gerar resultados de compatibilidade para os usuários.
-
-### Entregáveis
-- Algoritmo de compatibilidade funcionando.
-- Lista de compatibilidade gerada.
-
-## Fase 3: Feedback e Ajustes de Preferências
-### Objetivo
-Permitir que os usuários ajustem suas preferências e forneçam feedback sobre os resultados de compatibilidade.
-
-### Etapas
-- Apresentar os resultados para os usuários.
-- Coletar feedback sobre as sugestões de compatibilidade.
-- Permitir ajustes nas preferências dos usuários.
-
-### Entregáveis
-- Interface de feedback funcionando.
-- Funcionalidade de ajuste de preferências disponível.
-
-## Fase 4: Análise de Compatibilidade Aprimorada
-### Objetivo
-Aprimorar a análise de compatibilidade utilizando feedbacks dos usuários e padrões de dados mais profundos.
-
-### Etapas
-- Ajuste do algoritmo baseado no feedback dos usuários.
-- Análise de tendências estatísticas para melhorar a precisão da compatibilidade.
-
-### Entregáveis
-- Algoritmo refinado.
-- Resultados mais precisos de compatibilidade.
-
-## Fase 5: Geração de Perfis e Sugestões de Par Ideal
-### Objetivo
-Gerar perfis detalhados dos usuários e sugerir possíveis pares ideais com base nas análises.
-
-### Etapas
-- Criação de perfis completos dos usuários.
-- Sugestões de pares ideais com base nas compatibilidades.
-- Personalização dos perfis.
-
-### Entregáveis
-- Perfis detalhados gerados.
-- Sugestões de pares ideais.
-
-## Fase 6: Implementação de Anonimato e Privacidade
-### Objetivo
-Garantir que os usuários possam manter o anonimato de suas preferências e dados sensíveis.
-
-### Etapas
-- Implementação de funcionalidades de anonimato de dados.
-- Garantir a privacidade das preferências.
-- Oferecer controle sobre a visibilidade dos perfis.
-
-### Entregáveis
-- Funcionalidade de anonimato implementada.
-- Controle de privacidade disponível.
-
-## Fase 7: Lançamento e Avaliação de Desempenho
-### Objetivo
-Lançar o sistema para o público e avaliar seu desempenho.
-
-### Etapas
-- Lançamento do sistema.
-- Coleta de feedback pós-lançamento.
-- Monitoramento de desempenho.
-
-### Entregáveis
-- Sistema lançado e disponível.
-- Feedback pós-lançamento coletado.
-- Análises de desempenho realizadas.
-
-## Fase 8: Iteração e Melhoria Contínua
-### Objetivo
-Melhorar o sistema com base no uso real, garantindo que ele continue atendendo às necessidades dos usuários.
-
-### Etapas
-- Ajustes no algoritmo e na interface com base no feedback.
-- Atualizações periódicas de funcionalidades.
-- Monitoramento contínuo do uso do sistema.
-
-### Entregáveis
-- Melhorias contínuas no sistema.
-- Atualizações regulares implementadas.
+- Criar um formulário de coleta de dados onde o usuário pode preencher suas preferências.
+- Coletar dados do perfil do usuário (idade, peso, etc.) para análise de compatibilidade.
+- Garantir que o processo de coleta seja claro e direto, com informações sobre como os dados serão usados.
 
 ---
 
-## Resumo das Fases
-1. **Obtenção das Preferências dos Usuários**: Coleta de dados e características.
-2. **Análise de Compatibilidade Inicial**: Comparação estatística das características.
-3. **Feedback e Ajustes de Preferências**: Ajustes baseados no feedback.
-4. **Análise de Compatibilidade Aprimorada**: Refinamento da análise com dados e feedback.
-5. **Geração de Perfis e Sugestões de Par Ideal**: Geração de perfis detalhados.
-6. **Anonimato e Privacidade**: Garantia de anonimato e controle de privacidade.
-7. **Lançamento e Avaliação de Desempenho**: Colocação do sistema em operação e avaliação.
-8. **Iteração e Melhoria Contínua**: Melhorias baseadas no uso e feedback.
+## Fase 2: Análise dos Dados
+
+### Objetivo
+
+Analisar as preferências coletadas e gerar um perfil baseado no tipo de pessoa que seria atraída por esse usuário, de acordo com os dados fornecidos.
+
+### Ações
+
+- Processar as preferências do usuário e compará-las com características típicas.
+- Aplicar uma análise estatística para determinar padrões de atração.
+- Atribuir pesos diferentes para características como idade, tipo de corpo e cor da pele.
+  
+---
+
+## Fase 3: Geração de Perfil Atraente
+
+### Objetivo
+
+Gerar um perfil do tipo de pessoa que seria atraída por aquele usuário, com base nas suas preferências.
+
+### Ações
+
+- Criar o algoritmo de cálculo que gera o perfil de atração.
+- Retornar um conjunto de características (idade, peso, tipo de cabelo, cor de pele) do perfil de uma pessoa que seria atraída pelo usuário.
+- Exibir o resultado de forma clara e acessível no front-end.
 
 ---
 
-Esse segundo **README** fornece detalhes sobre as fases de desenvolvimento do projeto, com foco no fluxo de entrega e nos objetivos de cada fase. O primeiro **README** agora faz referência a este documento para quem deseja entender as fases do projeto mais profundamente.
+## Fase 4: Feedback e Ajustes no Sistema
+
+### Objetivo
+
+Obter feedback dos usuários para aprimorar os resultados e ajustes nas comparações de atração.
+
+### Ações
+
+- Criar uma funcionalidade de feedback para que os usuários possam avaliar se o perfil gerado corresponde às suas expectativas.
+- Ajustar os algoritmos com base nos feedbacks recebidos.
+- Melhorar a precisão dos resultados ao longo do tempo.
+
+---
+
+## Fase 5: Funcionalidade de Anonimato e API Pública
+
+### Objetivo
+
+Garantir que as preferências dos usuários sejam tratadas com anonimato e permitir que outros sistemas acessem os resultados por meio de uma API pública.
+
+### Ações
+
+- Implementar um sistema de anonimato de preferências para que os usuários não precisem expor suas informações pessoais.
+- Criar uma API pública que permita que outros aplicativos acessem os resultados ou utilizem o sistema para coletar dados.
+- Garantir a privacidade e segurança dos dados através de autenticação e criptografia.
+
+---
+
+## Fase 6: Integração e Lançamento
+
+### Objetivo
+
+Preparar o sistema para o lançamento, integrando as funcionalidades desenvolvidas até o momento.
+
+### Ações
+
+- Realizar testes finais de integração entre o front-end, back-end e banco de dados.
+- Corrigir bugs e realizar testes de usabilidade.
+- Preparar o ambiente para produção e garantir a escalabilidade do sistema.
+- Lançar a versão final para os usuários e monitorar o desempenho do sistema.
+
+---
+
+## Observações
+
+O desenvolvimento deste projeto será gradual, e cada fase será revisada e ajustada conforme necessário para garantir que os resultados sejam precisos e atendam às necessidades dos usuários. A atração é uma característica subjetiva e o sistema será projetado para ser uma análise **statisticamente orientada**, não uma previsão exata de realidade.
