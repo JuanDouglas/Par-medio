@@ -1,25 +1,46 @@
-# Sistema de Análise de Compatibilidade de Perfis
+# Projeto: Analisador de Atração com Base em Preferências
 
-Este projeto visa criar uma plataforma onde os usuários possam preencher formulários com suas características físicas e comportamentais, e com base em uma análise estatística, identificar os perfis de pessoas mais compatíveis com eles. O sistema também sugerirá o tipo de pessoa que seria atraída por um usuário, utilizando dados como preferências, histórico e características.
+## Descrição
 
-## Tecnologias Utilizadas
-- **Backend**: .NET (C#)
-- **Frontend**: Angular
-- **Banco de Dados**: SQL Server
+Este projeto tem como objetivo criar uma plataforma de coleta de dados sobre as preferências de características físicas de um parceiro e, com base nesses dados, **retornar o perfil de pessoa atraída por aquele usuário**. A ideia é que, ao coletar dados sobre o que o usuário acha atraente (ex: tipo de cabelo, cor da pele, idade preferida), o sistema possa analisar as preferências e características do próprio usuário e gerar um perfil baseado nas características de pessoas que seriam atraidas por ele.
 
-## Funcionalidades
-1. **Formulários de Preferências**: Coleta de características físicas e comportamentais dos usuários.
-2. **Análise de Compatibilidade**: Algoritmo que compara as características dos usuários para determinar os pares mais compatíveis.
-3. **Anonimato e Privacidade**: O sistema permitirá que as preferências dos usuários sejam mantidas anônimas.
-4. **API Pública**: Fornecerá endpoints para integração com outros sistemas ou aplicações.
-5. **Escolha de Perfis**: Os usuários poderão visualizar perfis sugeridos e ajustar suas preferências.
-6. **Feedback e Ajustes**: Sistema de feedback e ajustes baseados nas preferências dos usuários.
+### Objetivo Principal
+
+O sistema irá permitir que os usuários forneçam informações sobre suas preferências físicas em um parceiro e, em seguida, retornará um perfil de características físicas que seriam atraidas a ele, de acordo com a preferência de outros usuários.
+
+### Ferramentas e Tecnologias
+
+- **Back-end**: .NET Core (para processamento e API)
+- **Front-end**: Angular (para interface com o usuário)
+- **Banco de Dados**: SQL Server (para armazenamento dos dados)
+- **Análise**: Algoritmo para calcular compatibilidade e gerar os perfis com base em dados coletados
+
+## Funcionalidades do Sistema
+
+- Coleta de informações pessoais e preferências do usuário (ex: idade, peso, tipo de cabelo, cor da pele, etc.)
+- Geração de um perfil com base nas preferências informadas e características do próprio usuário
+- Análise estatística para determinar quais características seriam atraentes para o usuário, considerando suas preferências
+- Feedback de usuários para aprimoramento do sistema
+- Funcionalidade de anonimato para garantir a privacidade das preferências
 
 ## Fases do Projeto
-O projeto será desenvolvido em várias fases. Para detalhes sobre o andamento do projeto e o planejamento, consulte as [Fases do Projeto](./FASES.md).
 
-## Considerações
-A análise gerada pelo sistema será uma comparação estatística e não representará necessariamente a realidade. O objetivo é fornecer sugestões baseadas em dados de maneira imparcial e informada.
+Este projeto será desenvolvido em várias fases, começando pela coleta de dados do usuário e análise inicial das preferências.
+
+- **Fase 1**: Coleta de dados e preferências
+- **Fase 2**: Análise dos dados e definição de perfil
+- **Fase 3**: Geração do perfil atraente e ajustes com base no feedback
+- **Fase 4**: Integração de uma API pública e funcionalidade de feedback de usuários
+
+> Para obter mais detalhes das fases do projeto entre [Aqui](.\FASES.MD).
+
+### Observação
+
+O projeto é uma **análise estatística** das preferências dos usuários, e **não garante** que os resultados representem a realidade de todos os indivíduos. A atração é uma característica subjetiva e pode variar de acordo com muitos fatores externos.
+
+---
 
 ## Contribuições
-Sinta-se à vontade para contribuir com melhorias ou funcionalidades adicionais! Para mais detalhes, consulte o guia de contribuição.
+
+Para contribuir com o desenvolvimento deste projeto, basta abrir uma *pull request* ou enviar uma *issue* com sugestões ou correções.
+
