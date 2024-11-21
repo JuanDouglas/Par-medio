@@ -1,55 +1,25 @@
-# Compatibility Analysis System
+# Sistema de Análise de Compatibilidade de Perfis
 
-## **Descrição do Projeto**
-O **Compatibility Analysis System** é um conceito de aplicação que visa mapear características pessoais de usuários e determinar padrões de atração com base em informações coletadas. A ideia do projeto é permitir que os usuários preencham formulários detalhados com suas características físicas, comportamentais e preferências, e, a partir desses dados, o sistema gerará uma análise estatística sobre o tipo de pessoa que seria atraída pelo perfil do usuário.
+Este projeto visa criar uma plataforma onde os usuários possam preencher formulários com suas características físicas e comportamentais, e com base em uma análise estatística, identificar os perfis de pessoas mais compatíveis com eles. O sistema também sugerirá o tipo de pessoa que seria atraída por um usuário, utilizando dados como preferências, histórico e características.
 
-**Nota**: Este projeto ainda não foi construído. A implementação será feita utilizando as tecnologias listadas abaixo. O projeto fornecerá **análises estatísticas** sobre padrões de atração e não representará necessariamente a realidade. O objetivo é fornecer insights gerais sobre padrões de atração, e não uma previsão exata de comportamento humano.
+## Tecnologias Utilizadas
+- **Backend**: .NET (C#)
+- **Frontend**: Angular
+- **Banco de Dados**: SQL Server
 
-### **Funcionalidades Planejadas**
-#### **Cadastro e Perfil de Usuário**
-- Criação de perfil pessoal através de formulários que capturam características físicas e comportamentais.
-- Armazenamento seguro dos dados dos usuários no banco de dados.
+## Funcionalidades
+1. **Formulários de Preferências**: Coleta de características físicas e comportamentais dos usuários.
+2. **Análise de Compatibilidade**: Algoritmo que compara as características dos usuários para determinar os pares mais compatíveis.
+3. **Anonimato e Privacidade**: O sistema permitirá que as preferências dos usuários sejam mantidas anônimas.
+4. **API Pública**: Fornecerá endpoints para integração com outros sistemas ou aplicações.
+5. **Escolha de Perfis**: Os usuários poderão visualizar perfis sugeridos e ajustar suas preferências.
+6. **Feedback e Ajustes**: Sistema de feedback e ajustes baseados nas preferências dos usuários.
 
-#### **Definição do Par Ideal**
-- Configuração de características pessoais para formar um perfil único de usuário.
+## Fases do Projeto
+O projeto será desenvolvido em várias fases. Para detalhes sobre o andamento do projeto e o planejamento, consulte o [README de Fases do Projeto](./Fases_do_Projeto.md).
 
-#### **Análise Estatística com Relevância de Características**
-- Análise baseada em **pesos atribuídos** a características físicas e comportamentais.
-- O sistema irá considerar a relevância de cada característica no processo de análise de atração. Características mais importantes para o usuário terão maior impacto na recomendação do par ideal.
-  - Exemplo: Se a altura é considerada uma característica mais importante, ela terá um peso maior na análise.
-  
-#### **Dashboard de Resultados**
-- Interface intuitiva para visualização dos resultados da análise de compatibilidade.
-- Relatórios e gráficos para representar os padrões observados nos dados, considerando as características com maior peso.
+## Considerações
+A análise gerada pelo sistema será uma comparação estatística e não representará necessariamente a realidade. O objetivo é fornecer sugestões baseadas em dados de maneira imparcial e informada.
 
-#### **Anonimato de Preferências**
-- Garantia de privacidade ao permitir que os usuários ocultem suas preferências pessoais e características, caso desejem participar das análises de forma anônima.
-
-#### **API Pública para Integração**
-- Uma API pública permitirá que outras aplicações acessem os dados coletados (respeitando a privacidade dos usuários) para criar novas funcionalidades ou estender as existentes.
-- A API exporá endpoints RESTful usando **ASP.NET Core**, com autenticação e autorização para proteger o acesso aos dados.
-
-#### **Feature de Feedback de Compatibilidade**
-- Sistema onde o usuário pode visualizar perfis sugeridos com base nos dados inseridos e avaliar se esses perfis atendem às suas expectativas.
-- O feedback será utilizado para ajustar a relevância e o impacto das características no futuro.
-
-### **Tecnologias Planejadas**
-#### **Frontend**
-- **Angular**: Framework JavaScript para criação da interface do usuário.
-  - **Angular Material**: Para componentes de interface visual.
-  - **RxJS**: Para manipulação de eventos e estados assíncronos.
-
-#### **Backend**
-- **.NET Core (ASP.NET Core)**: Framework robusto para construção do backend, APIs RESTful e lógica de negócios.
-  - **Entity Framework Core**: ORM para interagir com o banco de dados SQL Server.
-  - **ASP.NET Identity**: Para autenticação e gerenciamento de usuários.
-  - **SignalR**: Para notificações em tempo real quando perfis compatíveis são encontrados.
-
-#### **Banco de Dados**
-- **SQL Server**: Banco de dados relacional para armazenamento seguro e eficiente dos dados dos usuários, características e preferências.
-  - **Procedures e Triggers**: Para operações complexas e automações no banco de dados.
-
-### **Instalação e Configuração Planejadas**
-1. **Clone o Repositório**:
-   ```bash
-   git clone https://github.com/username/compatibility-analysis-system.git
+## Contribuições
+Sinta-se à vontade para contribuir com melhorias ou funcionalidades adicionais! Para mais detalhes, consulte o guia de contribuição.
