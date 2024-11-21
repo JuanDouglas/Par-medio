@@ -16,7 +16,7 @@ Este projeto visa criar uma plataforma onde os usuários possam preencher formul
 6. **Feedback e Ajustes**: Sistema de feedback e ajustes baseados nas preferências dos usuários.
 
 ## Fases do Projeto
-O projeto será desenvolvido em várias fases. Para detalhes sobre o andamento do projeto e o planejamento, consulte o [README de Fases do Projeto](./Fases_do_Projeto.md).
+O projeto será desenvolvido em várias fases. Para detalhes sobre o andamento do projeto e o planejamento, consulte as [Fases do Projeto](./FASES.md).
 
 ## Considerações
 A análise gerada pelo sistema será uma comparação estatística e não representará necessariamente a realidade. O objetivo é fornecer sugestões baseadas em dados de maneira imparcial e informada.
